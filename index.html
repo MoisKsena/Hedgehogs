@@ -7,7 +7,6 @@
   <title>Hedgehogs</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/swiper.min.css">
 
 </head>
 <body>
@@ -33,29 +32,15 @@
     </header>
     <main>
       <section class="banner">
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="slide-one">
-                <h2>Однажды Ежи съел Петруччо</h2>
-                <p>Ежи никогда больше ничего не ел, потому что ничего не было. Только пил.</p>
-                <div class="button-swiper">
-                  <p>Прочитать всю историю</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="popular__slider-btn popular__slider-btn--left" id="popular-slider-left">
-            <svg width="34" height="23">
-              <use xlink:href="#arrow-left"></use>
-            </svg>
-          </div>
-          <div class="popular__slider-btn popular__slider-btn--right" id="popular-slider-right">
-            <svg width="34" height="23">
-              <use xlink:href="#arrow-right"></use>
-            </svg>
-          </div>
+        <div class="banner__button btn-prev"></div>
+        <div class="banner__slide-one">
+          <h2>Однажды Ежи съел Петруччо</h2>
+          <p>Ежи никогда больше ничего не ел, потому что ничего не было. Только пил.</p>
+          <button class="button-swiper">
+            <p>Прочитать всю историю</p>
+          </button>
         </div>
+        <div class="banner__button btn-next"></div>
       </section>
       <section class="sale">
         <div class="sale-sign">
@@ -64,19 +49,25 @@
         </div>
         <div class="sale-side">
           <article class="sale-item">
-            <div class="sale-foto"></div>
-            <h3>Ежи с ушами</h3>
-            <p>Наши ежи беззвучно топают по ночам, быстро сворачиваются в комо</p>
+            <img class="sale-foto" src="images/2.png" alt="#">
+            <div class="foto-sign">
+                <h3>Ежи с ушами</h3>
+                <p>Наши ежи беззвучно топают по ночам, быстро сворачиваются в комо</p>
+            </div>  
           </article>
           <article class="sale-item">
-              <div class="sale-foto"></div>
-              <h3>Ежи с ушами</h3>
-              <p>Наши ежи беззвучно топают по ночам, быстро сворачиваются в комо</p>
+              <img class="sale-foto" src="images/3.jpg" alt="#">
+              <div class="foto-sign">
+                  <h3>Ежи с ушами</h3>
+                  <p>Наши ежи беззвучно топают по ночам, быстро сворачиваются в комо</p>
+              </div>  
           </article>
           <article class="sale-item">
-              <div class="sale-foto"></div>
-              <h3>Ежи с ушами</h3>
-              <p>Наши ежи беззвучно топают по ночам, быстро сворачиваются в комо</p>
+              <img class="sale-foto" src="images/4.jpg" alt="#">
+              <div class="foto-sign">
+                  <h3>Ежи с ушами</h3>
+                  <p>Наши ежи беззвучно топают по ночам, быстро сворачиваются в комо</p>
+              </div>  
           </article>
         </div>
       </section>
@@ -88,7 +79,6 @@
   </footer>
   
   <script src="js/index.js"></script>
-  <script src="js/swiper.min.js"></script>
   
 </body>
 </html>

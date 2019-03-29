@@ -37,7 +37,7 @@ header {
 }
 
 .main-nav {
-  
+
 }
 
 .main-nav__list {
@@ -75,17 +75,37 @@ header {
 }
 
 .banner{
+  display: flex;
+  position: relative;
   height: 500px;
 }
 
-.slider-btn {
-  color: black;
+.banner__slide-one {
+  width: 100%;
+  background-image: url(../images/1.jpg);
+  background-repeat: no-repeat;
 }
 
-.slide-one {
-  width: 100%;
-  height: auto;
-  background-image: url(../images/1.jpg);
+.banner__button{
+  position: absolute;
+  top: 45%;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-top: 5px solid #000;
+  border-left: 5px solid #000;
+  transition: all 250ms ease-in-out;
+  color: transparent;
+}
+
+.btn-prev{
+  transform: rotate(-45deg);
+  left: 16px;
+}
+
+.btn-next {
+  transform: rotate(135deg);
+  right: 16px;
 }
 
 
@@ -97,21 +117,32 @@ header {
 }
 
 .sale-sign {
-
+  text-align: center;
 }
 
 .sale-side {
   display: flex;
+  width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .sale-item {
+  width: 360px;
+}
 
+.sale-foto {
+  width: 360px;
+  height: 230px;
 }
 
 .sale-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.foto-sign {
+  text-align: center;
 }
 
 
