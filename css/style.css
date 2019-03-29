@@ -13,6 +13,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   height: 90px;
+  align-items: center;
 }
 
 .burger{
@@ -34,6 +35,7 @@ header {
   flex: 5;
   align-items: center;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .main-nav {
@@ -43,7 +45,8 @@ header {
 .main-nav__list {
   display: flex;
   list-style: none;
-  
+  margin: 0;
+  padding: 0;
 }
 
 .main-nav__list-item:not(:last-child) {
@@ -62,8 +65,8 @@ header {
 }
 
 .search-loop {
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
   align-self: center;
   background-image: url(../images/loop.svg);
   background-repeat: no-repeat;
@@ -84,6 +87,14 @@ header {
   width: 100%;
   background-image: url(../images/1.jpg);
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.banner__slide-text {
+  width: 50%;
+  margin-left: 76px;
+  margin-top: 150px;
 }
 
 .banner__button{
@@ -129,17 +140,26 @@ header {
 }
 
 .sale-item {
-  width: 360px;
+  width: 30%; 
 }
 
 .sale-foto {
-  width: 360px;
+  width: 100%;
   height: 230px;
 }
 
-.sale-item:not(:last-child) {
-  margin-right: 30px;
+.sale-foto--item {
+  width: 100%;
+  height: inherit;
 }
+
+.sale-item {
+  margin: 0 auto;
+}
+
+/* .sale-item:not(:last-child) {
+  margin-right: 30px;
+} */
 
 .foto-sign {
   text-align: center;
@@ -155,3 +175,22 @@ footer {
   background-color: #363636;
 }
 
+
+
+@media (max-width: 768px) {
+  .sale-item {
+    width: 45%; 
+  } 
+  
+  .banner__slide-text {
+    width: 50%;
+    margin-left: 60px;
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 360px) {
+  .sale-item {
+    width: 100%; 
+  }
+}
