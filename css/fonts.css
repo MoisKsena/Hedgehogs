@@ -1,0 +1,23 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Raleway-Bold_0';
+  src: url('Raleway-Bold_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Raleway-Medium';
+  src: url('Raleway-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Raleway-Regular';
+  src: url('Raleway-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Raleway-SemiBold_0';
+  src: url('Raleway-SemiBold_0.ttf') format('truetype');
+}
