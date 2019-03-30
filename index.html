@@ -38,8 +38,8 @@
         <div class="banner__slide-one">
           <div class="banner__slide-text">
             <h2>Однажды Ежи съел Петруччо</h2>
-            <p>Ежи никогда больше ничего не ел, потому что ничего не было. Только пил.</p>
-            <button class="button-swiper">
+            <p>Ежи никогда больше ничего не ел, потому что<br>ничего не было. Только пил.</p>
+            <button class="banner-button">
               <p>Прочитать всю историю</p>
             </button>
           </div>
@@ -56,7 +56,7 @@
         </div>
         <div class="sale-side">
           <article class="sale-item">
-            <div class="sale-foto">
+            <div class="sale-foto" id="firstfotosale">
               <img class="sale-foto--item" src="images/2.png" alt="#">
             </div>
             <div class="foto-sign">
@@ -65,7 +65,7 @@
             </div>  
           </article>
           <article class="sale-item">
-              <div class="sale-foto">
+              <div class="sale-foto" id="secondfotosale">
                 <img class="sale-foto--item" src="images/3.jpg" alt="#">
               </div>
               <div class="foto-sign">
@@ -74,7 +74,7 @@
               </div>  
           </article>
           <article class="sale-item">
-              <div class="sale-foto">
+              <div class="sale-foto" id="thirdfotosale">
                 <img class="sale-foto--item" src="images/4.jpg" alt="#">
               </div>
               <div class="foto-sign">
@@ -108,7 +108,43 @@
     </main>
    
   <footer>
-
+    <div class="wrapper-footer"> 
+      <div class="footer-menu">
+        <div class="logo-footer"></div>
+        <div class="nav__footer">
+          <ul class="nav__list">
+            <li class="nav__list-element"><b>Наши ежи</b></li>
+              <ul class="nav__list-subpoints">
+                <li class="nav__list-item">Ежи с ушами</li>
+                <li class="nav__list-item">Ежи без ушей</li>
+                <li class="nav__list-item">Веселые ежи</li>
+                <li class="nav__list-item">Грустные ежи</li>
+                <li class="nav__list-item">Красивые ежи</li>
+              </ul>
+          </ul>
+          <ul class="nav__list">
+            <li class="nav__list-element"><b>О ежах</b></li>
+              <ul class="nav__list-subpoints">
+                <li class="nav__list-item">Рейтинги</li>
+                <li class="nav__list-item">История создания</li>
+              </ul>
+          </ul>
+          <ul class="nav__list">
+            <li class="nav__list-element"><b>Новости</b></li>
+              <ul class="nav__list-subpoints"></ul>
+                <li class="nav__list-item">В мире</li>
+                <li class="nav__list-item">В стране</li>
+              </ul>
+          </ul>
+        </div>
+        <div class="phone phone-footer"><a href="tel:+72121221212">+7 (212) 122-12-12</a></div>
+      </div>
+      <div class="footer-button">
+        <button class="button-thanks">
+          <p>Отправить благодарность создателям</p>
+        </button>
+      </div>
+    </div>
   </footer>
   
   <script src="js/index.js"></script>
