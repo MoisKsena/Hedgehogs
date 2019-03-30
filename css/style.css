@@ -4,7 +4,7 @@ body {
 }
 
 .wrapper{
-  /* width: 1140px; */
+  display: flex;
   width: 90%;
   margin: 0 auto;
 }
@@ -79,6 +79,8 @@ header {
 
 .banner{
   display: flex;
+  width: 90%;
+  margin: 0 auto;
   position: relative;
   height: 500px;
 }
@@ -123,6 +125,8 @@ header {
 
 .sale {
   display: flex;
+  width: 90%;
+  margin: 0 auto;
   flex-direction: column;
   align-items: center;
 }
@@ -166,7 +170,33 @@ header {
 }
 
 
+.text-information {
+  margin: 0;
+  padding: 76px 0;
+  background-color: #f5f5f5;
+}
 
+.text-infoblock {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.text-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.text-block:not(:last-child) {
+  margin-right: 30px;
+}
+
+.text-foto img {
+  width: 100%;
+  height: auto;
+}
 
 
 
@@ -187,9 +217,17 @@ footer {
     margin-left: 60px;
     margin-top: 70px;
   }
+
+  .text-infoblock {
+    display: block;
+  }
+
+  .text-block {
+    width: 100%;
+  }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 420px) {
   .sale-item {
     width: 100%; 
   }
