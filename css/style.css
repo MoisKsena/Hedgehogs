@@ -38,10 +38,6 @@ header {
   align-items: baseline;
 }
 
-.main-nav {
-
-}
-
 .main-nav__list {
   display: flex;
   list-style: none;
@@ -51,6 +47,11 @@ header {
 
 .main-nav__list-item:not(:last-child) {
   padding-right: 56px;
+}
+
+.main-nav__list-item--link {
+  text-decoration: none;
+  color: #000;
 }
 
 .search {
@@ -267,6 +268,12 @@ footer {
 .nav__list-subpoints {
   padding: 0;
   list-style: none;
+}
+
+.nav__list-element--title,
+.nav__list-item--link {
+  text-decoration: none;
+  color: white;
 }
 
 .phone-footer a {
