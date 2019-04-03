@@ -183,6 +183,7 @@ header {
 .sale-foto--item {
   width: 100%;
   height: inherit;
+  object-fit: cover;
 }
 
 .sale-item {
